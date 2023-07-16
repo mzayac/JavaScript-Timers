@@ -1,0 +1,12 @@
+function randomGame(){
+  let num;
+  let pick = 0;
+  let timer = setTime(function(){
+    num = Math.random();
+    times++
+      if(num > 0.75) {
+        clearTime(timer);
+        console.log("It took " + pick + " try/tries.");
+      }
+  },1000)
+}
